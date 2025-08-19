@@ -24,7 +24,7 @@ jobs:
           git remote set-url origin git@github.com:SwathiT25/github-actions-.git &&
           git fetch origin main &&
           git reset --hard origin/main &&
-          echo \"$SUDO_PASSWORD\" | sudo -S systemctl stop flaskapp &&
+          echo \"$SUDO_PASSWORD\" | sudo -S systemctl stop githubactions &&
           echo \"$SUDO_PASSWORD\" | sudo -S systemctl daemon-reload &&
-          echo \"$SUDO_PASSWORD\" | sudo -S systemctl start flaskapp
+          echo \"$SUDO_PASSWORD\" | sudo -S systemctl start githubactions
         "
