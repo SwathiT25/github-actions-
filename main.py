@@ -6,14 +6,14 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"Hello !!!!!"}
+    return {"Hello "}
 
 @app.get("/status")
 def get_status():
     return {"status": "FastAPI is running fine 🚀"}
 
 
-# test -10
+# test -11
 
 
 
