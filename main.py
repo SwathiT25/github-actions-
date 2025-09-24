@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {" hello"}
+    return {" hiiii"}
 
 @app.get("/status")
 def get_status():
